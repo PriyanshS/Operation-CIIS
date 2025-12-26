@@ -1,0 +1,37 @@
+{
+	"nodes":[
+		{"id":"df0fe119e7d9253a","type":"text","text":"**Actionable Insights and Bot Detection**","x":40,"y":60,"width":240,"height":60,"color":"3"},
+		{"id":"cb32eb396f38db14","type":"text","text":"**Content Correlation and Toolkit**","x":320,"y":-240,"width":280,"height":60,"color":"4"},
+		{"id":"7a0cedcba6294516","type":"text","text":"**Post Classification and Analysis**","x":-300,"y":-240,"width":280,"height":50,"color":"2"},
+		{"id":"af8b91c098d3635b","type":"text","text":"NLP & Sentiment Analysis  (Anti-India Score)  - Classify each post on a scale (e.g., 0-1) for anti-India content","x":-680,"y":-260,"width":310,"height":100},
+		{"id":"4b5675fc1e3d6f68","type":"text","text":"Account Processing (Python Script) - Takes posts from the \"Top Liked Posts\" DB - Filters for accounts with >1k followers","x":35,"y":-160,"width":249,"height":140},
+		{"id":"aaae4445cfd9f8bd","type":"text","text":"DATABASE: Top Performers - Accounts sorted in  descending order by followers count","x":38,"y":220,"width":246,"height":140},
+		{"id":"07cd1de7ce865e9b","type":"text","text":"**Data Ingestion and Real-Time Monitoring**","x":-605,"y":60,"width":260,"height":60,"color":"1"},
+		{"id":"73c8c6761e76cb2f","type":"text","text":"No","x":683,"y":-632,"width":97,"height":60},
+		{"id":"891dd3a3158aea2d","type":"text","text":"Yes","x":683,"y":-516,"width":97,"height":60},
+		{"id":"b8e8081b4fd63e45","type":"text","text":"DATABASE: Toolkit  - Stores highly similar |content to identify |coordinated campaigns","x":860,"y":-552,"width":250,"height":133},
+		{"id":"2b6ba846a0120575","type":"text","text":"Engagement Analysis (Python Script)  - Set a score based on likes, shares, comments","x":-467,"y":-460,"width":245,"height":120},
+		{"id":"d1c3997dee290b64","type":"text","text":"DATABASE: Top Liked Posts| - Posts with high likes and engagement score","x":-160,"y":-460,"width":250,"height":120},
+		{"id":"05156deb42293619","type":"text","text":"Dynamic Hashtag & Keyword List (Input)","x":-575,"y":-80,"width":200,"height":60},
+		{"id":"270906e4c59cabe3","type":"text","text":"Real-Time Monitoring Tool (Python Script)  - Continuously tracks social media streams Twitter API","x":-600,"y":200,"width":250,"height":125},
+		{"id":"f0c9f92a52764b76","type":"text","text":"Content Mapping  - Compare incoming posts to existing \"anti-India\"  posts in the database","x":348,"y":-460,"width":225,"height":140},
+		{"id":"455eda4714df994e","type":"text","text":"Is Content Similarity > 0.9?  (Yes/No)","x":342,"y":-582,"width":238,"height":60}
+	],
+	"edges":[
+		{"id":"8b456670b4566040","fromNode":"07cd1de7ce865e9b","fromSide":"right","toNode":"7a0cedcba6294516","toSide":"bottom"},
+		{"id":"e590543254d16516","fromNode":"7a0cedcba6294516","fromSide":"bottom","toNode":"df0fe119e7d9253a","toSide":"left"},
+		{"id":"8e8f96e3d8c63d95","fromNode":"df0fe119e7d9253a","fromSide":"right","toNode":"cb32eb396f38db14","toSide":"bottom"},
+		{"id":"a627fe6f40c59084","fromNode":"07cd1de7ce865e9b","fromSide":"top","toNode":"05156deb42293619","toSide":"bottom"},
+		{"id":"235975ee49996242","fromNode":"07cd1de7ce865e9b","fromSide":"bottom","toNode":"270906e4c59cabe3","toSide":"top"},
+		{"id":"e0113cc7932d70c1","fromNode":"df0fe119e7d9253a","fromSide":"bottom","toNode":"aaae4445cfd9f8bd","toSide":"top"},
+		{"id":"3f5229fc84f81a63","fromNode":"cb32eb396f38db14","fromSide":"top","toNode":"f0c9f92a52764b76","toSide":"bottom"},
+		{"id":"bd26061e7183dfb4","fromNode":"7a0cedcba6294516","fromSide":"left","toNode":"af8b91c098d3635b","toSide":"right"},
+		{"id":"9d5fe4a3d41d7cb3","fromNode":"af8b91c098d3635b","fromSide":"top","toNode":"2b6ba846a0120575","toSide":"left"},
+		{"id":"f281072c95524eae","fromNode":"2b6ba846a0120575","fromSide":"right","toNode":"d1c3997dee290b64","toSide":"left"},
+		{"id":"69c8960cc933d484","fromNode":"df0fe119e7d9253a","fromSide":"top","toNode":"4b5675fc1e3d6f68","toSide":"bottom"},
+		{"id":"747bc3a926552415","fromNode":"f0c9f92a52764b76","fromSide":"top","toNode":"455eda4714df994e","toSide":"bottom"},
+		{"id":"d98fa9db417fd786","fromNode":"455eda4714df994e","fromSide":"right","toNode":"73c8c6761e76cb2f","toSide":"left"},
+		{"id":"ea1263b1f7831997","fromNode":"455eda4714df994e","fromSide":"right","toNode":"891dd3a3158aea2d","toSide":"left"},
+		{"id":"2e80bd9788203ec4","fromNode":"891dd3a3158aea2d","fromSide":"right","toNode":"b8e8081b4fd63e45","toSide":"left"}
+	]
+}

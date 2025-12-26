@@ -1,0 +1,13 @@
+pandas
+numpy
+fastapi
+uvicorn
+joblib
+scikit-learn
+torch
+transformers
+python-multipart
+pydantic
+nltk
+gensim
+spacy
